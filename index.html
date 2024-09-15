@@ -7,6 +7,71 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="left-side">
+        <div class="logo-div">
+            <img src="./odin-lined.png" alt="The Odin Project logo.">
+            <p>ODIN</p>
+        </div>
+        <div class="credit-div">
+            <p>
+                Photo by <a href="https://unsplash.com/@raphael_nicolas">Raphael Nicholas</a> on 
+               <a href="https://unsplash.com/">Unsplash</a>
+            </p>
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="motivational-text">
+            <p>
+                This is not a real online service! You know you need something like this in
+                your life to help you realize your deepest dreams. <span style="display: block">Sign up <em>now</em> to
+                get started.</span>
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
+        </div>
+        <div class="form-container">
+            <h3 class="form-container-header">Let's do this!</h3>
+            <form action="" id="sign-up-form">
+                <div class="form-left-div">
+                    <div class="input-div">
+                        <label for="first-name" class="input-label">FIRST NAME</label>
+                        <input type="text" id="first-name" name="firstname">
+                    </div>
+                    <div class="input-div">
+                        <label for="email" class="input-label">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input-div">
+                        <label for="password" class="input-label">PASSWORD</label>
+                        <input type="password" id="password" name="password" required>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="form-right-div">
+                    <div class="input-div">
+                        <label for="last-name" class="input-label">LAST NAME</label>
+                        <input type="text" id="last-name" name="lastname">
+                    </div>
+                    <div class="input-div">
+                        <label for="phone" class="input-label">PHONE NUMBER</label>
+                        <input type="text" id="phone" name="phonenumber">
+                    </div>
+                    <div class="input-div">
+                        <label for="password-confirm" class="input-label">CONFIRM PASSWORD</label>
+                        <input type="password" id="password-confirm" name="passwordconfirm" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="buttons-container">
+            <div>
+                <button form="sign-up-form">Create Account</button>
+            </div>
+            <div>
+                <p>Already have an account? <a href="" class="log-in-link">Log in</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

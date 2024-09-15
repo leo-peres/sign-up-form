@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('./fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: stretch;
+}
+
+h3 {
+    margin: 0;
+}
+
+.left-side {
+    background-image: url("./photo-1725226125870-2c1b9eef9b91.avif");
+    background-size: cover;
+    min-width: 30%;
+    flex: auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo-div {
+    background-color: rgb(8 8 8 / 80%);
+    width: 100%;
+    height: 140px;
+    padding: 8px 90px;
+    position: absolute;
+    top: 160px;
+
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.logo-div img {
+    max-width: min(60%, 80px);
+    max-height: 80%;
+    flex: auto;
+}
+
+.logo-div p {
+    font-family: "norsebold";
+    color: #F8F8F8;
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+    flex: auto;
+}
+
+.credit-div {
+    color: #F8F8F8;
+    font-size: 0.6rem;
+    padding-bottom: 4px;
+}
+
+.credit-div a {
+    color: inherit;
+}
+
+.right-side {
+    flex: auto;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:  stretch;
+}
+
+.motivational-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: #FAFAFA;
+    padding: 0px 32px 32px;
+    flex: 0 0 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.motivational-text p {
+    max-width: 60ch;
+}
+
+.form-container {
+    padding: 12px 32px 24px;
+    margin-bottom: 6px;
+    box-shadow: 2px 2px 6px #D2D2D2;
+}
+
+.buttons-container {
+    background-color: #FAFAFA;
+    padding: 24px 32px;
+    flex: auto;
+}
+
+form {
+    display: flex;
+}
+
+.form-left-div,
+.form-right-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-left-div {
+    margin-right: 64px;
+}
+
+.form-container-header {
+    margin-bottom: 24px;
+}
+
+.input-label {
+    font-size: 0.6rem;
+    margin-bottom: 4px;
+    display: block;
+}
+
+input {
+    background-color: #FFFFFA;
+    padding: 1px 6px;
+    margin-bottom: 16px;
+    min-width: 200px;
+    min-height: 24px;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+
+input[type="password"] {
+    margin-bottom: 1px;
+}
+
+input[type="password"]:invalid,
+input[type="email"]:invalid {
+    border: 1px solid #B91C1C;
+}
+
+input[type="password"]:invalid + span::after {
+    color: #B91C1C;
+    font-size: 0.6rem;
+    content: "*Invalid password";
+    display: block;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #1D4ED8;
+    box-shadow: 2px 2px 4px #D2D2D2;
+}
+
+.buttons-container button {
+    color: #F8F8F8;
+    background-color: #4C4C4C;
+    width: 160px;
+    height: 36px;
+    padding: 0;
+    border: 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.buttons-container button:hover {
+    background-color: #545454;
+    cursor: pointer;
+}
+
+.buttons-container button:active {
+    background-color: #404040;
+}
+
+.log-in-link {
+    color: #4C4C4C;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.log-in-link:hover {
+    color: #545454;
+}
+
+.log-in-link:active {
+    color: #404040;
+}
